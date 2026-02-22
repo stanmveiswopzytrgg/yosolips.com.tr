@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | Yosolips</title>
+    <style>
+        /* Ana stil dosyasındaki CSS'i buraya aynen yapıştırıyoruz (Tutarlılık için) */
+        :root { --bg-color: #0f172a; --text-main: #f8fafc; --text-muted: #94a3b8; --primary: #6366f1; --card-bg: #1e293b; }
+        body { margin: 0; font-family: sans-serif; background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background-color: rgba(15, 23, 42, 0.95); border-bottom: 1px solid #334155; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); }
+        .logo { display: flex; align-items: center; font-size: 1.5rem; font-weight: bold; color: var(--text-main); text-decoration: none; }
+        .logo img { height: 35px; margin-right: 12px; border-radius: 4px; }
+        .nav-links { display: flex; gap: 20px; align-items: center; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; transition: 0.3s; }
+        .nav-links a:hover { color: var(--text-main); }
+        .btn { background-color: var(--primary); color: white !important; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+
+        .hero { padding: 100px 5%; text-align: center; background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://r.resimlink.com/JOvVaKBzh_ul.png'); background-size: cover; background-position: center; }
+        
+        .content-section { padding: 80px 15%; }
+        .content-section h2 { color: var(--primary); font-size: 2.5rem; }
+        .grid-info { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .info-box { background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #334155; }
+
+       /* Alt Bilgi (Footer) */
+        footer {
+            background-color: #0b1120;
+            padding: 60px 10% 30px;
+            border-top: 1px solid #334155;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer-col h4 { 
+            color: var(--text-main); 
+            margin-bottom: 20px; 
+            font-size: 1.2rem; 
+            display: flex; 
+            align-items: center; 
+        }
+
+        .footer-col h4 img {
+            height: 24px;
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+
+        .footer-col ul { list-style: none; padding: 0; margin: 0; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
+        .footer-col ul li a:hover { color: var(--text-main); }
+        
+        .footer-bottom { 
+            text-align: center; 
+            padding: 25px; 
+            color: #64748b; 
+            background-color: #0b1120; 
+            font-size: 0.85rem;
+            border-top: 1px solid #1e293b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="https://r.resimlink.com/arWMNxT6.png" alt="YS Logo">
+            Yosolips
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="projeler.html">Projelerimiz</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="https://discord.gg/yosolips" class="btn">Discord'a Katıl</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Hikayemiz</h1>
+        <p>Yosolips'in arkasındaki tutkuyu ve vizyonu keşfedin.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Biz Kimiz?</h2>
+        <p>Yosolips, sadece bir Minecraft sunucusu değil, aynı zamanda içerik üretimi ve topluluk yönetiminde fark yaratan bir oluşumdur. YouTube'da başladığımız serüveni, bugün yüzlerce oyuncunun bir arada olduğu devasa bir ekosisteme dönüştürdük.</p>
+        
+        <div class="grid-info">
+            <div class="info-box">
+                <h3>Misyonumuz</h3>
+                <p>Oyuncularımıza sadece bir oyun alanı değil, kendilerini ifade edebilecekleri, kaliteli rol yapma (RP) deneyimi yaşayabilecekleri ve güvenli bir topluluk ortamı sunmak.</p>
+            </div>
+            <div class="info-box">
+                <h3>Vizyonumuz</h3>
+                <p>Türkiye'deki Minecraft ve Anime topluluğunu birleştirerek, dünya standartlarında içerik ve teknik altyapıya sahip projeler üretmeye devam etmek.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h4>
+                <img src="https://r.resimlink.com/arWMNxT6.png" alt="Logo">
+                Yosolips
+            </h4>
+            <p>Aylardır Minecraft projeleri ve YouTube içerikleri geliştiriyor, oyuncularımıza güvenilir ve eğlenceli bir JJK SMP deneyimi sunuyoruz.</p>
+            <p style="word-break: break-all; color: var(--primary);">discord.gg/yosolips</p>
+            <p>Türkiye, İstanbul</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hızlı Linkler</h4>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Projelerimiz</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Youtube Kanallarımız.</h4>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UC3f46w-m0327UbTc2XV_8Lg">Yosolips</a></li>
+                <li><a href="https://www.youtube.com/channel/UCFUwtnMzRw9Hje64y4DhHuQ">Yosolips MC</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Sosyal</h4>
+            <ul>
+                <li><a href="#">Discord</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <div class="footer-bottom">
+        &copy; 2026 Yosolips Company — Tüm Hakları Saklıdır.
+    </div>
+</body>
+</html>
